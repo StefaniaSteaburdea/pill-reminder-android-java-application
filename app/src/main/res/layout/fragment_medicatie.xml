@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicatieFragment"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+        <TextView
+            android:id="@+id/textV"
+            android:text="Medication"
+            android:gravity="start"
+            style="@style/text4"
+            android:paddingVertical="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textV"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/myBoxMedicament"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+                <ImageButton
+                    android:id="@+id/adaugare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@drawable/ic_plus"
+                    android:layout_marginBottom="10dp"
+                    android:baselineAlignBottom="true"
+            /></LinearLayout>
+
+</RelativeLayout>

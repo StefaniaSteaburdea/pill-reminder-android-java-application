@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularSupraveghetori"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/people_icon"
+        android:layout_marginBottom="50dp"/>
+    <EditText
+        android:id="@+id/Nume"
+        android:hint="Supervisor name"
+        style="@style/my_edit_text" />
+   <EditText
+        android:id="@+id/Telefon"
+        android:hint="phone"
+        style="@style/my_edit_text" />
+
+    <Button
+        android:id="@+id/salvare"
+        style="@style/mybutton"
+        android:text="Save"
+        />
+</LinearLayout>

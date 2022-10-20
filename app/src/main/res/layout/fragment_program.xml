@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramFragment"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#FDFDFD">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_logout"
+            android:id="@+id/logout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The schedule for today:"
+            android:paddingTop="10dp"
+            style="@style/text4"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/program"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="14dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:paddingBottom="14dp" />
+
+                        <TextView
+                            android:id="@+id/textNML"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:text="Astazi nu mai aveti medicamente de luat"
+                            android:visibility="gone" />
+                </RelativeLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teste"
+            android:text="Teste mesaj/mail"
+            android:visibility="gone"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication history:"
+            style="@style/text4"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

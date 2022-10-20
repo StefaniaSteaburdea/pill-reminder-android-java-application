@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothConnection"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:id="@+id/bt_con1">
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Search a bluetooth device"
+          android:id="@+id/buton"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Send"
+          android:id="@+id/buton2"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:visibility="gone"/>
+      <ListView
+          android:id="@+id/dispozitive"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt_con2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are connected to the device:"
+            style="@style/text2"/>
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            style="@style/text"/>
+        <Button
+            android:id="@+id/stergere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mybutton"
+            android:layout_gravity="center"
+            android:text="Stop the bluetooth connection"/>
+    </LinearLayout>
+
+</LinearLayout>

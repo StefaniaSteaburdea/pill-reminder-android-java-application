@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingEnd="10dp"
+       android:paddingTop="5dp"
+       android:background="@drawable/my_box">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:minHeight="60dp"
+           android:minWidth="60dp"
+           android:src="@drawable/ic_pill"
+           android:id="@+id/pill_col"
+           android:layout_gravity="center"
+           android:layout_margin="11dp"
+           />
+
+
+       <LinearLayout
+           android:id="@+id/box"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           android:paddingHorizontal="5dp"
+           android:layout_marginEnd="20dp"
+           android:paddingVertical="10dp">
+
+           <TextView
+               android:id="@+id/numeM"
+               style="@style/text2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:id="@+id/l1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/intervalText"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Frequency:" />
+
+               <TextView
+                   android:id="@+id/Interval"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/in"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="h" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" " />
+
+               <TextView
+                   android:id="@+id/oraRef"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/pastileRamase">
+
+               <TextView
+                   android:id="@+id/nrPastile"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="No of pills:" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/compartimentLayout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Compartment:" />
+
+               <TextView
+                   android:id="@+id/compartiment"
+                   style="@style/text3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/delBtn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_close"
+        android:layout_gravity="end"
+        android:layout_margin="7dp"
+        android:padding="5dp"
+        android:backgroundTint="#EFEDF7"
+        app:tint="#BB96E6" />
+</androidx.cardview.widget.CardView>

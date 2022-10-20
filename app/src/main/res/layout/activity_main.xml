@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingLeft="26dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/lic1" />
+        <TextView
+            android:text="Login"
+            style="@style/titlu"
+            />
+
+        <EditText
+            android:id="@+id/Adresa_mail_utilizatori"
+            android:hint="email"
+            style="@style/my_edit_text" />
+        <EditText
+            android:id="@+id/Parola_utilizatori"
+            android:hint="pasword"
+            android:inputType="textPassword"
+            style="@style/my_edit_text" />
+
+        <Button
+            style="@style/mybutton"
+            android:text="Login"
+            android:id="@+id/autentificare"/>
+
+        <TextView
+            android:id="@+id/buton_inregistrare"
+            android:text="Don't have an account? Sign up!"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:textAllCaps="false"
+            android:textColor="#D2D2D2"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

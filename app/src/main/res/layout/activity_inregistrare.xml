@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inregistrare"
+    android:gravity="center"
+    android:background="#FFFFFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:paddingLeft="26dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:text="Sign up"
+                style="@style/titlu"
+                />
+            <EditText
+                android:id="@+id/nume"
+                android:hint="name"
+                style="@style/my_edit_text" />
+
+
+            <EditText
+                android:id="@+id/Adresa_mail"
+                android:hint="email"
+                style="@style/my_edit_text" />
+            <EditText
+                android:id="@+id/Parola"
+                android:hint="password"
+                android:inputType="textPassword"
+                style="@style/my_edit_text" />
+            <EditText
+                android:id="@+id/Confirmare_parola"
+                android:hint="confirm password"
+                android:inputType="textPassword"
+                style="@style/my_edit_text" />
+            <EditText
+                android:id="@+id/Telefon"
+                android:hint="phone"
+                style="@style/my_edit_text" />
+            <Button
+                android:id="@+id/creare"
+                style="@style/mybutton"
+                android:text="Sign up"
+                />
+
+            <TextView
+                android:id="@+id/buton_autentificare"
+                android:text="Already a user? Login."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FFFFFF"
+                android:textAllCaps="false"
+                android:textColor="#D2D2D2"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
